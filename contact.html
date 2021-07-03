@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Education website</title>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="sub-header">
+	<nav>
+		<a href="index.html">
+			<img src="images/logo.png"/>
+		</a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="course.html">Course</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contract</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Contact Us</h1>
+</header>
+<!---------Contact Page-------->
+
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.7954967215064!2d90.357759314243!3d23.762415084583445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf5f5a89637b%3A0x857ef702c3cdf116!2sMohammadpur%20Central%20University%20College!5e1!3m2!1sen!2sbd!4v1619332062242!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	
+</section>
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>XYZ Road, ABC Building</h5>
+					<p>Mohammadpur, Dhaka, BD </p>
+				</span>
+			</div>
+		
+		
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>+88 0123456789</h5>
+					<p>Monday to Saturday, 10AM to 6PM </p>
+				</span>
+			</div>
+		
+		
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>info@smridoy.com</h5>
+					<p>Email us your query </p>
+				</span>
+			</div>
+			
+		</div>
+		<div class="contact-col">
+			<form action="">
+				<input type="text" placeholder="Enter your name" required/>
+				<input type="email" placeholder="Enter email address" required/>
+				<input type="text" placeholder="Enter your subject" required/>
+				<textarea name="" rows="8" placeholder="Massage" required></textarea>
+				<button type="submit" class="hero-btn red-btn">Send Massage</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!------Footer------->
+
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	Aenean commodo ligula eget dolor. Aenean massa<br>Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+	<div class="icons">
+		<i class="fa fa-facebook" ></i>
+		<i class="fa fa-twitter" ></i>
+		<i class="fa fa-instagram" ></i>
+		<i class="fa fa-linkedin" ></i>
+	</div>
+	<p>&copy;Copyright<i class="fa fa-heart-o" ></i>S M Ridoy</p>
+</section>
+
+
+<!------JavaScript for toggle Menu------->
+
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+</body>
+</html> 
